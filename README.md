@@ -12,7 +12,7 @@ A script like this could be useful for someone recording content in public, and 
 
 <img width="600" alt="Screenshot 2024-02-15 at 4 03 55 PM" src="https://github.com/camboydd/Computer-Vision-Project/assets/98326906/bc01726d-7c78-459e-8676-b278ed2df6ec">
 
-### How to run:
+### How to run
 - Clone repository to your machine
 - Download python3 and all required packages
 - Create a folder in the root directory, called "faces"
