@@ -3,18 +3,6 @@ import os
 import dlib
 import numpy as np
 
-# Initialize Dlib's facial landmark detector
-predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
-
-# Load face detection model
-face_detector = dlib.get_frontal_face_detector()
-
-# Load face recognition model
-face_recognizer = dlib.face_recognition_model_v1("models/dlib_face_recognition_resnet_model_v1.dat")
-
-# Directory containing folders of images of known faces
-known_faces_dir = 'faces/'
-
 # Function to load known faces
 def load_known_faces():
     known_faces = {}
@@ -51,6 +39,18 @@ def blur_face(image, startX, startY, endX, endY):
     
     # Replace the original face with the blurred face
     image[startY:endY, startX:endX] = blurred_face
+
+# Initialize Dlib's facial landmark detector
+predictor = dlib.shape_predictor("models/shape_predictor_68_face_landmarks.dat")
+
+# Load face detection model
+face_detector = dlib.get_frontal_face_detector()
+
+# Load face recognition model
+face_recognizer = dlib.face_recognition_model_v1("models/dlib_face_recognition_resnet_model_v1.dat")
+
+# Directory containing folders of images of known faces
+known_faces_dir = 'faces/'
 
 # Load known faces
 known_faces = load_known_faces()
