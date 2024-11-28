@@ -1,4 +1,4 @@
-# Computer-Vision-Project
+# Face Detection Security
  
 ### About
 > **_NOTE:_**  This project uses dlib (models folder) to detect and recognize faces.
